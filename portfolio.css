@@ -44,8 +44,8 @@
   }
   .icon {
     display: inline-block;
-    width: 10px;
-    height: 16px;
+    width: 16px;
+    height: 10px;
     background-size: contain;
     background-position: center;
     margin-right: 10px;
@@ -231,7 +231,49 @@
     letter-spacing: 0.03em;
    margin-bottom: 4px;
   }
-  
+ .social-list-icon {
+   width: 20px;
+   height: 20px;
+   fill: var(--white);
+ }
+ .social-list-links:hover {
+  background-color: var(--nav-color);
+}
+.footer-flex {
+  display: flex;
+}
+.class-commit {
+ margin-left: 70px;
+}
+.footer-margin-left {
+  margin-left: 10px;
+}
+.footer-margin-left:first-child {
+  margin-left: 0;
+}
+ .social-list {
+   display: flex;
+ }
+ .social-list-links {
+   width: 44px;
+   height: 44px;
+   background-color:rgba(255, 255, 255, 0.1);;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .commit {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
   .job {
     margin: 0;
   }

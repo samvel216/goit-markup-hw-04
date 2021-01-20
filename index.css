@@ -52,6 +52,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 .main-nav {
   display: flex;
@@ -82,8 +84,8 @@ ul {
 }
 .icon {
   display: inline-block;
-  width: 10px;
-  height: 16px;
+  width: 16px;
+  height: 10px;
   background-size: contain;
   background-position: center;
   margin-right: 10px;
@@ -214,7 +216,26 @@ ul {
 .professional-name {
   text-align: center;
 }
-
+.feature-list .item:before {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-image: url(./images/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-list .item1:before {
+  background-image: url(./images/clock.svg);
+  background-position: center;
+}
+.feature-list .item2:before {
+  background-image: url(./images/diagram.svg);
+}
+.feature-list .item3:before {
+  background-image: url(./images/astronaut.svg);
+}
 .face .item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -280,7 +301,7 @@ ul {
 .clients-list-link {
   width: 170px;
   height: 90px;
-  margin-left: 30px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,6 +317,26 @@ ul {
   height: 20px;
   fill: var(--borderr);
 }
+.icon5 {
+  width: 40px;
+  height: 52px;
+}
+.icon1 {
+  width: 41px;
+  height: 42px;
+}
+.icon2 {
+  width: 80px;
+  height: 42px;
+}
+.icon3 {
+  width: 59px;
+  height: 47px;
+}
+.icon4 {
+  width: 88px;
+  height: 45px;
+}
 .social-list {
   display: flex;
   justify-content: center;
@@ -304,14 +345,16 @@ ul {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-left: 10px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-color);
 }
-.lov {
-  margin: 0;
+.client-margin-left {
+  margin-left: 30px;
+}
+.client-margin-left:first-child {
+  margin-left: 0;
 }
 .social-list-link:hover {
   background-color: var(--nav-color);
@@ -377,11 +420,16 @@ ul {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-left: 10px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background: var(--footer-znak);
+}
+.footer-margin-left {
+  margin-left: 10px;
+}
+.footer-margin-left:first-child {
+  margin-left: 0;
 }
 .item::before {
   background: #f5f4fa;
