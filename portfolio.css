@@ -58,12 +58,69 @@
     background-position: center;
     margin-right: 10px;
   }
+  .menu-link {
+    position: relative;
+  }
+  .menu-link::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    height: 4px;
+    background: var(--nav-color);
+    opacity: 0;
+    transition: opacity 250ms;
+  }
+  .menu-link:hover::after {
+    opacity: 1;
+  }
+  .float-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 64px 24px;
+ background: #2196F3 90%;
+opacity: 0;
+transition: 250ms;
+transform: translatey(100%);
+  }
+  .tehnocrack {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    width: 322px;
+    height: 168px; 
+    color: var(--white);
+  }
+  .project-item {
+    position: relative;
+    overflow: hidden;
+  }
+  .project-link:hover .float-content,
+  .project-link:focus .float-content {
+opacity: 1;
+transform: translatey(0%);
+  }
+  
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
   .nav-rith:hover svg {
     fill: var(--nav-color);
   }
   .logo:hover,
   .logo:focus {
     color: var(--primary-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
   }
   .logotrip {
     margin-bottom: 20px;
@@ -132,6 +189,8 @@
   .site-nav2 .link:hover,
   .site-nav2 .link:focus {
     color: var(--nav-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .panel {
     display: flex;
@@ -183,6 +242,8 @@
   .button:focus {
     background-color: var(--nav-color);
     color: var(--white);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .logotip {
     color: var(--nav-color);
@@ -216,6 +277,8 @@
   .site-niz:hover,
   .site-niz:focus {
     color: var(--nav-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .footer {
     background-color: var(--background);
@@ -236,8 +299,11 @@
    height: 20px;
    fill: var(--white);
  }
- .social-list-links:hover {
+ .social-list-links:hover, 
+ .social-list-links:focus {
   background-color: var(--nav-color);
+  transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-flex {
   display: flex;
@@ -298,10 +364,14 @@ letter-spacing: 0.03em;
   .logotip:hover,
   .logotip:focus {
     color: var(--white);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .logotip:hover,
   .logotip:focus {
     color: var(--white);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .link1 {
     color: var(--nav-color);
@@ -309,3 +379,5 @@ letter-spacing: 0.03em;
   .link1:hover,
   .link1:focus {
     color: var(--title-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

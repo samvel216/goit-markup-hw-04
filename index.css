@@ -78,6 +78,23 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.menu-link {
+  position: relative;
+}
+.menu-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  height: 4px;
+  background: var(--nav-color);
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.menu-link:hover::after {
+  opacity: 1;
+}
 .site-nav2 {
   display: flex;
   margin-left: auto;
@@ -98,8 +115,11 @@ ul {
   background-position: center;
   margin-right: 10px;
 }
-.nav-rith:hover svg {
+.nav-rith:hover,
+.nav-rith:focus svg {
   fill: var(--nav-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav2 .item + .item {
@@ -130,6 +150,8 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--nav-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-title {
   color: var(--title-text-color);
@@ -275,12 +297,33 @@ ul {
 .section-img {
   padding-bottom: 94px;
 }
+.fload-content {
+  position: relative;
+  overflow: hidden;
+}
+.tramb {
+  position: absolute;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 82px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--white-color);
+  width: 100%;
+}
 .nav-rith {
   color: var(--primary-text-color);
 }
 .nav-rith:hover,
 .nav-rith:focus {
   color: var(--nav-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .name-team {
   color: var(--title-text-color);
@@ -316,6 +359,11 @@ ul {
   width: 20px;
   height: 20px;
   fill: var(--borderr);
+}
+.social-list-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
 }
 .icon5 {
   width: 40px;
@@ -356,11 +404,17 @@ ul {
 .client-margin-left:first-child {
   margin-left: 0;
 }
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: var(--nav-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-list-link:hover .social-list-icon {
+.social-list-link:hover,
+.social-list-link:focus .social-list-icon {
   fill: var(--white-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress {
   color: var(--white-color);
@@ -391,6 +445,8 @@ ul {
 .logo .logo-3:hover,
 .logo .logo-3:focus {
   color: rgb(204, 51, 24);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .title {
   font-size: 14px;
@@ -436,11 +492,17 @@ ul {
   width: 270px;
   height: 120px;
 }
-.social-list-links:hover .social-list-icon {
+.social-list-links:hover,
+.social-list-links:focus .social-list-icon {
   fill: var(--white-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-list-links:hover {
+.social-list-links:hover,
+.social-list-links:focus {
   background-color: var(--nav-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-flex {
   display: flex;
@@ -459,6 +521,8 @@ ul {
 .nav-footer:hover,
 .nav-footer:focus {
   color: var(--nav-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link1 {
   color: var(--nav-color);
@@ -466,4 +530,40 @@ ul {
 .link1:hover,
 .link1:focus {
   color: var(--title-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 500ms linear 500ms;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  height: 581px;
+  background-color: var(--white-color);
+}
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--white-color);
+  border: 1px solid #000000 10%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
