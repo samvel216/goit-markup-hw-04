@@ -529,6 +529,7 @@ ul {
 }
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 .footer-label {
   padding-left: 93px;
