@@ -155,7 +155,18 @@ ul {
   background-color: var(--background);
 
   padding: 200px 215px;
+  background-image: url("../images/Img\(12\).jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img\(12\).jpg");
+  background-repeat: no-repeat;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .hero-title {
   font-size: 44px;
   font-style: normal;
