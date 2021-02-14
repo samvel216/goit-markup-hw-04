@@ -29,13 +29,12 @@ ul {
 /* Стили Хедера*/
 .header {
   padding: 0px 215px;
+  border: 1px solid #ececec;
 }
 .container {
-  width: 1200px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -196,6 +195,10 @@ ul {
   box-sizing: border-box;
   width: 370px;
 }
+.item-img:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .item-img:nth-child(3n + 1) {
   margin-left: 0px;
 }
@@ -210,6 +213,7 @@ ul {
   letter-spacing: 0.06em;
   text-align: left;
   margin-bottom: 4px;
+  color: var(--primary-color);
 }
 .img-container {
   padding: 20px 24px;
@@ -266,11 +270,13 @@ ul {
 }
 .footer-div-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-ul-svg {
   display: flex;
 }
-.footer-list .link:hover {
+.footer-list .link:hover,
+.footer-list .link:focus {
   color: var(--nav-color);
 }
 .footer-h3-svg {
