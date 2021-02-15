@@ -46,9 +46,6 @@ ul {
   margin: 0px;
   padding: 0px;
 }
-.header {
-  border: 1px solid #ececec;
-}
 .header-logo-span {
   color: var(--primary-color);
 }
@@ -152,12 +149,7 @@ ul {
 .header-nav-contacts .link:hover .telephone-icon {
   fill: var(--nav-color);
 }
-.header-nav-contacts .link:focus .letter-icon {
-  fill: var(--no-primary-color);
-}
-.header-nav-contacts .link:focus .telephone-icon {
-  fill: var(--nav-color);
-}
+
 /* Стили героя*/
 .section-hero {
   background-color: var(--background);
@@ -355,12 +347,6 @@ ul {
 .team-list-svg:hover .team-icon {
   fill: var(--white);
 }
-.team-list-svg:focus {
-  background-color: var(--nav-color);
-}
-.team-list-svg:focus .team-icon {
-  fill: var(--white);
-}
 /*Стили постоянных клиентов */
 .clients-section {
   padding-top: 94px;
@@ -421,12 +407,6 @@ ul {
 .clients-link:hover .clients-icon {
   fill: var(--nav-color);
 }
-.clients-link:focus {
-  border-color: var(--nav-color);
-}
-.clients-link:focus .clients-icon {
-  fill: var(--nav-color);
-}
 .clients-li {
   margin-right: 30px;
 }
@@ -473,13 +453,11 @@ ul {
 .footer-list .item {
   margin-top: 9px;
 }
-.footer-list .link:hover,
-.link:focus {
+.footer-list .link:hover {
   color: var(--nav-color);
 }
 .footer-div-container {
   display: flex;
-  align-items: baseline;
 }
 .footer-icon {
   width: 20px;
@@ -498,8 +476,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.footer-list-svg:hover,
-.footer-list-svg:focus {
+.footer-list-svg:hover {
   background-color: var(--nav-color);
 }
 .footer-li-svg {
