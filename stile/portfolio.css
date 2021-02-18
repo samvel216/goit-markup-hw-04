@@ -76,6 +76,12 @@ ul {
   color: var(--primary-color);
   padding: 32px 0px;
 }
+.header-nav .hover-item {
+  color: var(--nav-color);
+}
+.header-nav-contacts .hover-item {
+  color: var(--nav-color);
+}
 .header-nav .item {
   margin-right: 50px;
 }
@@ -98,12 +104,7 @@ ul {
 .header-nav-contacts .item:last-child {
   margin: 0px;
 }
-.header-nav .hover-item {
-  color: var(--nav-color);
-}
-.header-nav-contacts .hover-item {
-  color: var(--nav-color);
-}
+
 .header-nav .link:hover,
 .header-nav .link:focus {
   color: var(--nav-color);
@@ -123,7 +124,7 @@ ul {
 .letter-icon {
   width: 16px;
   height: 12px;
-  fill: var(--nav-color);
+  fill: var(--no-primary-color);
   margin-right: 10px;
 }
 .telephone-icon {
@@ -132,16 +133,16 @@ ul {
   fill: var(--no-primary-color);
   margin-right: 10px;
 }
-.header-nav-contacts .item:hover .letter-icon {
-  fill: var(--no-primary-color);
-}
-.header-nav-contacts .item:hover .telephone-icon {
+.header-nav-contacts .link:hover .letter-icon {
   fill: var(--nav-color);
 }
-.header-nav-contacts .item:focus .letter-icon {
-  fill: var(--no-primary-color);
+.header-nav-contacts .link:hover .telephone-icon {
+  fill: var(--nav-color);
 }
-.header-nav-contacts .item:focus .telephone-icon {
+.header-nav-contacts .link:focus .letter-icon {
+  fill: var(--nav-color);
+}
+.header-nav-contacts .link:focus .telephone-icon {
   fill: var(--nav-color);
 }
 /* Секция картинок */
@@ -183,6 +184,8 @@ ul {
 .section-button:focus {
   color: var(--white);
   background-color: var(--nav-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .list {
   list-style: none;
@@ -195,7 +198,8 @@ ul {
   box-sizing: border-box;
   width: 370px;
 }
-.item-img:hover {
+.item-img:hover,
+.item-img:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -217,6 +221,7 @@ ul {
 }
 .img-container {
   padding: 20px 24px;
+  width: 370px;
 }
 .list-text {
   font-size: 16px;
