@@ -75,6 +75,7 @@ ul {
   text-decoration: none;
   color: var(--primary-color);
   padding: 32px 0px;
+  display: block;
 }
 .header-nav .hover-item {
   color: var(--nav-color);
@@ -97,6 +98,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--no-primary-color);
   padding: 32px 0px;
+  display: block;
 }
 .header-nav-contacts .item {
   margin-right: 50px;
@@ -147,7 +149,7 @@ ul {
 }
 /* Секция картинок */
 .section-img {
-  padding: 94px 215px;
+  padding: 94px 0px;
 }
 .list-button {
   text-align: center;
